@@ -19,4 +19,4 @@ demo = gr.Interface(
     title="Example of a Gradio app running a Hugging Face model, deployed on Koyeb",
 )
 
-demo.launch(server_port=8080)
+demo.launch(server_name="0.0.0.0", server_port=8080)
