@@ -1,7 +1,7 @@
 import gradio as gr
-from transformers import pipeline
+from huggingface_hub import InferenceApi
 
-pipe = pipeline("sentiment-analysis")
+pipe = InferenceApi("distilbert-base-uncased-finetuned-sst-2-english")
 
 
 def greet(text: str):
